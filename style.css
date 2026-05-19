@@ -1,0 +1,44 @@
+body, html{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, rgb(0, 0, 61), rgb(86, 0, 104));
+    height: 100%;   
+    color: rgb(255, 0, 0);
+    gap: 10px;
+}
+
+#header{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 100%;
+    background-color: rgb(71, 0, 138);
+    border: 2px solid black;
+    border-radius: 20px;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: large;
+}
+
+#login{
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    width: fit-content;
+    align-self: center;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+#body{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(71, 0, 138, 0.267);
+    border: 1px solid black;
+    border-radius: 20px;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: large;
+}
