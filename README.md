@@ -6,7 +6,7 @@ A clean and responsive **Login Page** built with vanilla HTML, CSS, and JavaScri
 
 ## 📸 Preview
 
-> *(Add a screenshot or GIF of your login page here)*
+![preview](resc/image.png)
 
 ---
 
