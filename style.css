@@ -4,11 +4,47 @@ body, html {
     display: flex;
     flex-direction: column;
     min-height: 100%;
-    min-width: 100%;
+    min-width: 100vw;
     align-items: center;
     background-image: url('resc/SafeSiteBackground.png');
+    background-size: cover;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-top: 10vh;
+    box-sizing: border-box;
 }
 
+#header {
+    position: fixed;
+    top: 20px;          /* ← small gap from top, replaces margin */
+    left: 50%;
+    transform: translateX(-50%); /* ← centers it horizontally */
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    border: 2px solid rgba(235, 235, 235, 0.253);
+    border-radius: 20px;
+    width: 80vw;
+    padding: 2vh;       /* ← reduced from 5vh to save space */
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+    margin: 0;          /* ← remove margin, use top instead */
+    overflow-y: hidden;
+    font-size: 1.2rem;
+}
+
+#firstInterface {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid rgba(235, 235, 235, 0.253);
+    border-radius: 20px;
+    width: 75vw;
+    padding: 5vh;
+    flex: 1;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+    margin: 0 auto;   /* ← reduced from 10vh */
+}
 
 #login{
     display: flex;
@@ -24,32 +60,25 @@ body, html {
 
 #maintext, p{
     align-self: center;
-    font-size: 100px;
+    font-size: 5vw;
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
 }
 
-i{
+#par{
     text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+    text-overflow: 0;
+    font-size: 2dvw;
+}
+
+.buttons{
+    transition: transform 0.5s ease; /* smooth animation */
 }
 
 
-
-#firstInterface{
-    display: flex;
-    flex-direction: row;
-    border: 2px solid rgba(235, 235, 235, 0.253);
-    border-radius: 20px;
-    width: 75vw;
-    padding: 5vh;
-    height: 100%;
-    justify-content :space-between;
-    backdrop-filter: blur(10px);
-    margin: 10vh;
-}
 
 #fingertips {
     display: inline-block;  /* required for transform to work */
-    transition: transform 0.3s ease; /* smooth animation */
+    transition: transform 1s ease; /* smooth animation */
 }
 
 #fingertips:hover{
@@ -58,5 +87,18 @@ i{
 }
 
 #email:focus, #pass:focus{
-    transform: scale(1.05);
+    border: 5px solid rgba(255, 192, 203, 0.301);
+    border-radius: 20px;
+    transform: scale(1.5);
+}
+
+#email, #pass{
+    
+    border-radius: 20px;
+    transition: transform 0.5s ease; /* smooth animation */
+
+}
+.buttons:hover{
+   transform: scale(1.1, 1.1);
+   color:rgb(212, 0, 255);
 }
