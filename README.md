@@ -48,12 +48,12 @@ login-page/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/zairo-cpe/Login-Page
    ```
 
 2. **Navigate into the project folder**
    ```bash
-   cd your-repo-name
+   cd Login-Page
    ```
 
 3. **Open `index.html` in your browser**
